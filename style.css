@@ -2,6 +2,9 @@
   font-family: "LondrinaSolid";
   src: url(./LondrinaSolid-Black.ttf);
 }
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +152,8 @@ section {
   color: #635c52;
   font-size: 1.35em;
   font-weight: 400;
+  width: 40%;
+  z-index: 10;
 }
 .foot-box {
   height: 85%;
@@ -163,6 +168,7 @@ section {
   font-weight: 700;
   transition: all 0.5s ease;
   font-family: sans-serif;
+  display: flex;
 }
 
 .foot-box:hover {
@@ -173,4 +179,26 @@ section {
 
 #foot-btm-btm {
   height: 13%;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  background-color: #4bedc2;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 11;
+  pointer-events: none;
+  /* background-color: black; */
 }
